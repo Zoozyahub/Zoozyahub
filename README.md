@@ -46,3 +46,13 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+```mermaid
+graph TD
+    A[refine_query] --> B[search_db]
+    B --> C[evaluate_relevance]
+    C -->|Релевантный| D[end]
+    C -->|Нерелевантный| E[search_web]
+    E --> F[edit_web_response]
+    F --> D[end]
+```
